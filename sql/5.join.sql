@@ -35,6 +35,7 @@
 -- Category.objects.get(name='drama').movies.all()
 
 
+-- M:N관계 설정을 위해선 중간다리 역할을 하는 것이 있어야한다 아래 경우엔 movies_category_movies
 -- SELECT * FROM movies_movie
 -- JOIN movies_category_movies ON movies_movie.id = movies_category_movies.movie_id
 -- JOIN movies_category ON movies_category.id = movies_category_movies.category_id
